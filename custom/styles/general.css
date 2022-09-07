@@ -1,0 +1,71 @@
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+	text-transform: none;
+}
+
+.reveal img, .reveal video, .reveal iframe {
+	max-width: min(60vh, 100%);
+	max-height: 60vh;
+}
+
+.reveal .a-right {
+	text-align: right;
+}
+
+.reveal .slides section section[data-facts] {
+	background-color: rgba(0, 0, 0, 0.6);
+	border: 5px solid;
+	padding: 0.5rem;
+	box-sizing: border-box;
+}
+
+.reveal .slides footer {
+	margin-top: 1em;
+	font-size: 1rem;
+}
+
+.copyright {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 1.5rem;
+	text-align: center;
+	font-size: 1.25rem;
+}
+
+.col2 {
+	display: flex;
+	text-align: left;
+	font-size: 0.6em;
+	line-height: 1.2em;
+	padding: 0 2rem;
+}
+
+.col2 > div {
+	flex: 1 1 50%;
+}
+
+.reveal code {
+	color: #bf79db;
+}
+
+.reveal pre {
+	width: auto;
+	font-size: 18px;
+	box-shadow: none;
+}
+
+.reveal pre + .filename {
+	font-size: 12px;
+	line-height: 12px;
+	margin-top: -15px;
+	color: grey;
+	font-style: italic;
+}
+
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Conference Talk Slides</title>
+		<link rel="stylesheet" href="{{{themeUrl}}}" id="theme" />
+		<style>
+			:root {
+				--background-color: #151515;
+				--main-font: 'Source Sans Pro', Helvetica, sans-serif;
+				--text-color: #fff;
+				--size-1: 0.25rem;
+				--size-2: 0.5rem;
+				--size-3: 0.75rem;
+				--size-4: 1rem;
+				--size-5: 1.25rem;
+				--size-6: 1.5rem;
+				--size-7: 1.75rem;
+				--size-8: 2rem;
+				--size-9: 2.25rem;
+				--size-10: 2.5rem;
+				--size-12: 3rem;
+				--size-14: 3.5rem;
+				--size-16: 4rem;
+				--size-20: 5rem;
+				--fontSizes-xs: 0.75rem;
+				--fontSizes-sm: 0.875rem;
+				--fontSizes-md: 1rem;
+				--fontSizes-lg: 1.125rem;
+				--fontSizes-xl: 1.25rem;
+				--fontSizes-2xl: 1.5rem;
+				--fontSizes-3xl: 1.875rem;
+				--fontSizes-4xl: 2.25rem;
+				--fontSizes-5xl: 3rem;
+				--fontSizes-6xl: 3.75rem;
+				--fontSizes-7xl: 4.5rem;
+				--fontSizes-8xl: 6rem;
+				--fontSizes-9xl: 8rem;
+			}
+
+			body {
+				background: var(--background-color);
+				font-family: var(--main-font);
+				color: var(--text-color);
+				max-width: 90rem;
+				margin: 0 auto;
+			}
+
+			h1,
+			h2 {
+				margin: 0;
+				line-height: 1;
+			}
+
+			h1 {
+				font-size: clamp(var(--fontSizes-3xl), 5vw, var(--fontSizes-5xl));
+			}
+
+			a {
+				display: flex;
+				align-items: center;
+				height: 100%;
+				border: 1px solid #fff;
+				border-radius: var(--size-2);
+				color: var(--text-color);
+				text-decoration: none;
+				padding: var(--size-4);
+				transition: all 0.25s ease;
+				box-sizing: border-box;
+			}
+
+			a:hover {
+				box-shadow: 4px 4px 0 #fff;
+			}
+
+			.page {
+				padding: clamp(var(--size-10), 5vw, var(--size-20));
+			}
+
+			.list {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				grid-gap: var(--size-6);
+				list-style: none;
+				padding: 0;
+				margin: var(--size-12) 0 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="page">
+			<header>
+				<h1>Conference Talk Slides</h1>
+			</header>
+			<ul class="list">
+				{{#files}}
+				<li>
+					<a href="{{filePath}}" title="{{title}}"> {{title}} </a>
+				</li>
+				{{/files}}
+			</ul>
+		</div>
+	</body>
+</html>

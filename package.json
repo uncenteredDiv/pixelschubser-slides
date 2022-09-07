@@ -1,0 +1,28 @@
+{
+  "name": "pixelschubser-talk-slides",
+  "version": "1.0.0",
+  "description": "Slides from my Frontend-Conference talks",
+  "scripts": {
+    "start": "reveal-md ./decks/ -w --listing-template ./custom/listing.html",
+    "build": "rm -rf ./build && reveal-md ./decks/ --static build --static-dirs=./decks/assets --listing-template ./custom/listing.html",
+    "serve:static": "serve ./build/"
+  },
+  "keywords": [
+    "frontend",
+    "markdown",
+    "revealjs",
+    "reveal.js",
+    "reveal-md",
+    "slides",
+    "presentations"
+  ],
+  "author": "Manuel Lieb",
+  "license": "MIT",
+  "dependencies": {
+    "reveal-md": "5.0.0",
+    "serve": "11.3.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}

@@ -1,0 +1,14 @@
+# WebStorm
+.idea/
+
+# React
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules/
+
+# Build
+build/
